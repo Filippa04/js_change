@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <p id="demo">20D</p>
+    <button onclick="ChangeText()">Change Text</button><br>
+
+    <img id="bild" src="candleit_logo.jpg" alt=""><br>
+    <button onclick="ChangePicture()">Change Img</button><br>
+
+    <table>
+        <th id="th">
+            Engelska
+        </th>
+        <th id="th">
+            Svenka
+        </th>
+        <tr>
+            <td>Hi</td>
+            <td>Hej</td>
+        </tr>
+        <tr>
+            <td>Hello</td>
+            <td>Hejsan</td>
+        </tr>
+        <tr>
+            <td>Goodbye</td>
+            <td>Hejdå</td>
+        </tr>
+    </table>
+    <button onclick="ChangeTh()">Change Heading</button>
+
+
+    <script>
+        function ChangeText()
+        {
+            document.getElementById('demo').innerHTML = 'You are amazing';
+        }
+
+        function ChangePicture()
+        {
+            document.getElementById('bild') .src="svenska3_np_2.jpg";
+        }
+
+        function ChangeTh()
+        {
+            document.getElementById('th').innerHTML = 'English';
+        }
+
+    </script>
+</body>
+</html>
